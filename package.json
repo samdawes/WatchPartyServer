@@ -1,5 +1,10 @@
 {
+  "scripts":{
+    "start": "node app.js"
+  },
+
   "dependencies": {
-    "ws": "^7.0.0"
+    "nodemon": "^1.19.3",
+    "ws": "^7.1.2"
   }
 }
