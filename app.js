@@ -7,7 +7,6 @@ wss.on('connection', function connection(ws) {
   ws.on('message', function incoming(data) {
     var message = JSON.parse(data);
     let room_code = message.room_code;
-    console.log(message);
 
     wss.clients.forEach(function each(client) {
       //The protocol is the room_code, host clients will have a protocol that is a room_code,
